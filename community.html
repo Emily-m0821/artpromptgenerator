@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Community</title>
+  <link rel="stylesheet" href="community.css" />
+</head>
+<body>
+  <div class="background-image"></div>
+<div class="background-blur"></div>
+
+    <div class="navbar">
+     <div href="index.html" class="title">Artwork</div>
+
+    <nav class="navigate">
+      <a href="prompt.html">Prompt Generator</a>
+      <a href="challenge.html">Challenge Mode</a>
+      <a href="reference.html">References</a>
+      <a href="community.html">Art Community</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+    <section class="community-page">
+    <h1>Art Community</h1>
+    <p class="intro">Share your artwork, write about your ideas, and connect with other artists.</p>
+
+    <div class="post-form">
+      <h2>Share Your Artwork</h2>
+
+      <input type="text" id="artistName" placeholder="Your name" />
+
+      <textarea id="artDescription" placeholder="Write a short description about your artwork"></textarea>
+
+      <input type="file" id="artImage" accept="image/*" />
+
+      <img id="previewImage" class="preview-image" />
+
+      <button id="shareBtn">Share Artwork</button>
+    </div>
+
+    <h2 class="feed-title">Community Posts</h2>
+
+    <div id="postContainer" class="post-container"></div>
+  </section>
+<button id="topBtn">↑</button>
+  <script src="community.js"></script>
+</body>
+</html>
