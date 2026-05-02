@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, sans-serif;
+}
+
+/* NAVIGATION BAR */
+
+.navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100px;
+  background-color: #EFEFEF;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-left: 60px;
+  padding-right: 40px;
+  padding-bottom: 15px;
+  z-index: 1000;
+}
+
+.title {
+  font-size: 46px;
+  font-weight: 400;
+  color: #5d7b8d;
+}
+
+.navigate {
+  display: flex;
+  gap: 15px;
+  align-items: flex-end;
+}
+
+.navigate a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: #5d7b8d;
+}
+
+/* BACKGROUND */
+.background {
+  position: fixed;
+  inset: 0;
+  background: url("https://www.harpgallery.com/photos/54/5/79/54579-2.jpg") center/cover no-repeat;
+  z-index: -2;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(6px);
+  background: rgba(255,255,255,0.2);
+  z-index: -1;
+}
+
+/* LAYOUT */
+/* LAYOUT */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+  margin-top: 100px;
+}
+
+/* LEFT TEXT */
+.left {
+  width: 45%;
+  color: white;
+}
+
+.left h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.left p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* FORM CARD */
+.form-card {
+  width: 45%;
+  background: #e9e9e9;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #4c6b78;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #6a8793;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 20px;
+  align-self: flex-end;
+  padding: 10px 30px;
+  border: none;
+  background: #6a8f8b;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #587a77;
+}

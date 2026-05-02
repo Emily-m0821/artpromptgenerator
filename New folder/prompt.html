@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="prompt.css" />
+  <title>Daily Art Prompt Generator</title>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <div href="index.html" class="title">Artwork</div>
+
+    <nav class="navigate">
+      <a href="prompt.html">Prompt Generator</a>
+      <a href="challenge.html">Challenge Mode</a>
+      <a href="reference.html">References</a>
+      <a href="community.html">Art Community</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <div class="page">
+    <div class="overlay">
+      <div class="app">
+
+        <!-- Header -->
+        <header class="header">
+          <h1>Daily Art Prompt Generator</h1>
+          <p>
+            Select categories, then generate 2-3 prompts to practice.
+            Challenge yourself, make it yours!
+          </p>
+        </header>
+
+        <section class="top-layout">
+
+          <!-- Left Panel -->
+          <div class="panel category-panel">
+
+            <h2>Categories</h2>
+
+            <div class="prompt-count-row">
+              <label for="promptCount">Number of prompts:</label>
+
+              <select id="promptCount">
+                <option value="2">2</option>
+                <option value="3" selected>3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+
+            <div class="category-list" id="categoryForm">
+
+              <label class="category-item">
+                <input type="checkbox" value="environment" />
+                <span>Environment</span>
+              </label>
+
+              <label class="category-item">
+                <input type="checkbox" value="character" />
+                <span>Character</span>
+              </label>
+
+              <label class="category-item">
+                <input type="checkbox" value="colorPalette" />
+                <span>Color theme</span>
+              </label>
+
+              <label class="category-item">
+                <input type="checkbox" value="perspective" />
+                <span>Perspective / Composition</span>
+              </label>
+
+              <label class="category-item">
+                <input type="checkbox" value="emotion" />
+                <span>Emotion / Mood</span>
+              </label>
+
+              <label class="category-item">
+                <input type="checkbox" value="mediaSkills" />
+                <span>Media / Art Skills</span>
+              </label>
+
+              <label class="category-item">
+                <input type="checkbox" value="random" />
+                <span>Random</span>
+              </label>
+
+            </div>
+
+            <button id="generateBtn" class="generateBtn">
+              Generate!
+            </button>
+
+            <input
+              type="text"
+              id="customPromptInput"
+              placeholder="Have something in mind?"
+            />
+
+            <button class="savePromptBtn" id="savePromptBtn">
+              Save Prompt
+            </button>
+
+            <div id="promptOutput"></div>
+
+          </div>
+
+          <!-- Right Panel -->
+          <div class="panel prompt-panel">
+            <div id="output" class="prompt-list"></div>
+          </div>
+
+        </section>
+
+        <!-- Favorites -->
+        <section class="panel favorites-section">
+          <h2>Save some for later</h2>
+          <div id="favorites" class="prompt-list"></div>
+        </section>
+
+        <!-- Quick Sketch -->
+        <section class="quick-sketch-section">
+    <div class="quick-sketch-box">
+
+      <div class="sketch-image-frame">
+        <img
+          id="sketchImage"
+          src="https://picsum.photos/600/360?random=1"
+          alt="Random sketch reference"
+        />
+      </div>
+
+      <div class="sketch-content">
+        <h2>Grab Your Sketchbook, set a timer <br>and begin!</h2>
+
+        <p>
+          This part challenges your ability to grasp what is the most important
+          in a drawing. Here's a random photo, draw it in your own style.
+          Focusing on what do you think is the most important.
+        </p>
+
+        <div class="sketch-buttons">
+          <button id="refreshBtn">Refresh</button>
+          <a href="community.html" id="shareBtn">Share</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+        <!-- Bottom Buttons -->
+        <a href="challenge.html" class="nav-btn">
+          Go to Challenge Mode
+        </a>
+
+        <a href="reference.html" class="nav-btn">
+          Need some References?
+        </a>
+
+      </div>
+    </div>
+  </div>
+  
+<button id="topBtn">↑</button>
+
+
+  <script src="prompt.js"></script>
+
+</body>
+</html>
